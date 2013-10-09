@@ -133,6 +133,9 @@ fi
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$HOME/bin/:$PATH
 
+alias jstown="cd ~/airship && . ~/airship/bin/activate && cd ~/airship/airship"
 alias get_to_workin=". ~/localAirship/bin/activate && cd ~/src/airship/airship"
 alias v_in="cd /Users/tracyabrahms/vagrant-configs/airship && vagrant ssh"
+alias pretty_graph="git log --oneline --graph --decorate --all"
+alias ls="ls --color"
 EDITOR=~/bin/subl

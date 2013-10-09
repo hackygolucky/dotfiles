@@ -3,6 +3,17 @@ set nocompatible
 au BufNewFile,BufRead *.vs,*.fs,*.frag,*.vert,*.fp,*.vp,*.glsl setf glsl 
 syntax enable
 
+" Syntax for multiple tag files are
+" set tags=/my/dir1/tags, /my/dir2/tags
+set tags=tags;$HOME/.vim/tags/ "recursively searches directory for 'tags' file
+
+" TagList Plugin Configuration
+let Tlist_Ctags_Cmd='/usr/bin/ctags' " point taglist to ctags
+let Tlist_GainFocus_On_ToggleOpen = 1      " Focus on the taglist when its toggled
+let Tlist_Close_On_Select = 1              " Close when something's selected
+let Tlist_Use_Right_Window = 1             " Project uses the left window
+let Tlist_File_Fold_Auto_Close = 1         " Close folds for inactive files
+
 set noautoindent
 set noai
 set nocindent 
@@ -79,3 +90,8 @@ nnoremap <Leader>/ :NERDTree<CR>
 " call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
 map <F1> :vertical wincmd f<CR>
+
+"let g:syntastic_always_populate_loc_list=1
+let g:syntastic_javascript_checkers=['jsl']
+let g:syntastic_html_checkers=[]
+execute pathogen#infect()

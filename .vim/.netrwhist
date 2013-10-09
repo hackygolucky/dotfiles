@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/tracyabrahms/vagrant-configs/airship'
-let g:netrw_dirhist_2='/Users/tracyabrahms/projects/parser'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/vagrant/airship/airship/static/js/page/message'
+let g:netrw_dirhist_2='/home/vagrant/airship/airship/static/js/modules'
+let g:netrw_dirhist_3='/home/vagrant/airship/airship/templates/apps/composer/v2'
+let g:netrw_dirhist_4='/home/vagrant/airship/airship/templates/apps/composer'
+let g:netrw_dirhist_5='/home/vagrant/dotfiles/.vim/autoload'
