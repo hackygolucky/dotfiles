@@ -2,6 +2,11 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 . ~/.bashrc
 
+#
+# npm i -g without chown
+#
+export PATH=$HOME/.node_modules/bin:$PATH
+
 # {{{
 # Node Completion - Auto-generated, do not touch.
 shopt -s progcomp

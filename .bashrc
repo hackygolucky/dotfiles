@@ -132,10 +132,14 @@ fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$HOME/bin/:$PATH
+export CHEF_PATH=/Users/tracyabrahms/projects/ua/chef_configs
+export AIRSHIP_PATH=/Users/tracyabrahms/projects/ua/airship
 
-alias jstown="cd ~/airship && . ~/airship/bin/activate && cd ~/airship/airship"
-alias get_to_workin=". ~/localAirship/bin/activate && cd ~/src/airship/airship"
+alias jstown="cd ~/projects/ua/airship && . ~/airship/bin/activate && cd ~/airship/airship-js"
+alias get_to_workin=". ~/projects/ua/airship/bin/activate && cd ~/src/airship/airship"
 alias v_in="cd /Users/tracyabrahms/vagrant-configs/airship && vagrant ssh"
 alias pretty_graph="git log --oneline --graph --decorate --all"
 alias ls="ls -FGH"
+alias npmlsl="npmlist --depth=1 local"
+function pubnpm() { npm --reg https://registry.npmjs.org $@; }
 EDITOR=~/bin/subl
